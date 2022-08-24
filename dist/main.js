@@ -1,0 +1,1 @@
+(()=>{const e=document.querySelector("#containerPokemon"),t=async t=>{const o=await fetch(`https://pokeapi.co/api/v2/pokemon/${t}/`),n=await o.json(),a=document.createElement("img");a.src=n.sprites.other.home.front_default,a.classList.add("img-thumbnail","rounded"),a.style.width="200px",e.appendChild(a)};((e,o)=>{for(let e=1;e<=8;e++)t(e)})()})();
